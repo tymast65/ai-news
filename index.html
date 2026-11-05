@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sygnał – newsy o AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ===== 1. TOKENY – zmień wygląd tutaj ===== */
+:root{
+  --bg:#E8ECF3; --surface:#F7F9FC; --ink:#14213D; --muted:#58647E; --line:#C9D1E0;
+  --accent:#2F5BFF; --on-accent:#fff;
+  --c-modele:#2F5BFF; --c-badania:#0E9F8E; --c-biznes:#D98A00; --c-regulacje:#E2503A; --c-narzedzia:#8A4FE0;
+  --font-head:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --font-body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1626; --surface:#18213A; --ink:#E8ECF7; --muted:#9AA6C2; --line:#2C3858;
+    --accent:#6C8BFF; --on-accent:#0F1626;
+    --c-modele:#6C8BFF; --c-badania:#3CCDB9; --c-biznes:#F2B03D; --c-regulacje:#FF7B66; --c-narzedzia:#B58CFF;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1626; --surface:#18213A; --ink:#E8ECF7; --muted:#9AA6C2; --line:#2C3858;
+  --accent:#6C8BFF; --on-accent:#0F1626;
+  --c-modele:#6C8BFF; --c-badania:#3CCDB9; --c-biznes:#F2B03D; --c-regulacje:#FF7B66; --c-narzedzia:#B58CFF;
+  color-scheme:dark;
+}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.55 var(--font-body)}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* ===== 2. UKŁAD ===== */
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.brand{font:800 1.5rem var(--font-head);letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
+.brand i{width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:ping 2.4s ease-out 1}
+@keyframes ping{0%{box-shadow:0 0 0 0 var(--accent)}100%{box-shadow:0 0 0 22px transparent}}
+.tools{display:flex;gap:8px}
+.btn{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 14px;cursor:pointer;transition:background .15s,border-color .15s}
+.btn:hover{border-color:var(--accent)}
+.btn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.demo{background:var(--surface);border:1.5px dashed var(--line);border-radius:10px;padding:8px 14px;font-size:.875rem;color:var(--muted);margin-bottom:8px}
+
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center;padding:36px 0 44px}
+.hero h1{font:800 clamp(2.4rem,6vw,4.6rem)/.98 var(--font-head);letter-spacing:-.035em;margin:0 0 16px}
+.hero p{color:var(--muted);max-width:44ch;margin:0}
+.pulse{background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:20px}
+.pulse h2{font:600 .95rem var(--font-body);color:var(--muted);margin:0 0 14px}
+.row{display:grid;grid-template-columns:96px 1fr 28px;gap:10px;align-items:center;width:100%;border:0;background:none;padding:6px 4px;border-radius:8px;cursor:pointer;text-align:left}
+.row:hover{background:var(--bg)}
+.row[aria-pressed="true"]{background:var(--bg);outline:2px solid var(--cc)}
+.bar{height:16px;border-radius:4px;background:var(--cc);width:0;transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.row b{text-align:right;font-variant-numeric:tabular-nums}
+
+.bar-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-bottom:20px}
+.bar-tools input,.bar-tools select{background:var(--surface);border:1.5px solid var(--line);border-radius:999px;padding:8px 16px;min-width:0}
+.bar-tools input{flex:1 1 220px}
+.count{color:var(--muted);font-size:.9rem;margin-left:auto}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;padding-bottom:56px}
+.card{overflow:hidden;background:var(--surface);border:1.5px solid var(--line);border-top:6px solid var(--cc);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.meta{display:flex;justify-content:space-between;font-size:.85rem;color:var(--muted)}
+.tag{font-weight:600;color:var(--cc)}
+.card h3{font:800 1.3rem/1.15 var(--font-head);letter-spacing:-.015em;margin:0}
+.card p{margin:0;color:var(--muted)}
+.more{display:none;border-left:3px solid var(--cc);padding-left:12px}
+.card.open .more{display:block}
+.more a{color:var(--accent);font-weight:600}
+.foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:6px}
+.meter{display:flex;gap:3px;align-items:center;font-size:.8rem;color:var(--muted)}
+.meter span{width:8px;height:16px;border-radius:2px;background:var(--line)}
+.meter span.on{background:var(--cc)}
+.acts{display:flex;gap:6px}
+.acts .btn{padding:5px 12px;font-size:.875rem}
+.cover{margin:-18px -18px 4px;height:120px;overflow:hidden;color:var(--cc);background:color-mix(in srgb,var(--cc) 12%,var(--surface));display:block}
+.cover svg,.cover img{width:100%;height:100%;display:block;object-fit:cover}
+.cover .m{transform-box:fill-box;transform-origin:center}
+.card:hover .cover .m,.card:focus-within .cover .m{animation:drift 2.2s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateY(0) scale(1)}to{transform:translateY(-6px) scale(1.12)}}
+.net{width:100%;max-width:520px;height:auto;margin-top:24px;color:var(--accent)}
+.net .n{transform-box:fill-box;transform-origin:center;animation:beat 2.6s ease-in-out infinite}
+.net .l{stroke-dasharray:6 8;animation:flow 3s linear infinite}
+@keyframes beat{50%{transform:scale(1.5);opacity:.55}}
+@keyframes flow{to{stroke-dashoffset:-56}}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 0}
+footer{border-top:1.5px solid var(--line);padding:24px 0 36px;color:var(--muted);font-size:.875rem}
+[data-cat="modele"]{--cc:var(--c-modele)}[data-cat="badania"]{--cc:var(--c-badania)}
+[data-cat="biznes"]{--cc:var(--c-biznes)}[data-cat="regulacje"]{--cc:var(--c-regulacje)}
+[data-cat="narzedzia"]{--cc:var(--c-narzedzia)}[data-cat="all"]{--cc:var(--accent)}
+@media (max-width:820px){.hero{grid-template-columns:1fr;gap:24px}.row{grid-template-columns:84px 1fr 24px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><i></i>Sygnał</div>
+    <div class="tools">
+      <button class="btn" id="savedBtn" aria-pressed="false">Zapisane: <span id="savedN">0</span></button>
+      <button class="btn" id="themeBtn" aria-label="Przełącz motyw">Motyw</button>
+    </div>
+  </header>
+  <div class="demo" id="demoNote">Dane demonstracyjne: wpisy poniżej są przykładowe i nie opisują prawdziwych wydarzeń.</div>
+
+  <section class="hero">
+    <div>
+      <h1>Newsy o AI bez szumu.</h1>
+      <p>Każdy wpis ma ocenę wagi od 1 do 5. Kliknij kategorię w pulsie dnia, żeby zawęzić listę.</p>
+      <svg class="net" viewBox="0 0 520 150" aria-hidden="true">
+        <path class="l" d="M30 100L110 40L200 95L290 30L370 90L450 45L495 110" fill="none" stroke="currentColor" stroke-width="2" opacity=".5"/>
+        <path class="l" d="M200 95L250 135L370 90" fill="none" stroke="currentColor" stroke-width="2" opacity=".3"/>
+        <g fill="currentColor">
+          <circle class="n" cx="30" cy="100" r="7"/><circle class="n" cx="110" cy="40" r="7" style="animation-delay:.3s"/>
+          <circle class="n" cx="200" cy="95" r="9" style="animation-delay:.6s"/><circle class="n" cx="290" cy="30" r="7" style="animation-delay:.9s"/>
+          <circle class="n" cx="370" cy="90" r="9" style="animation-delay:1.2s"/><circle class="n" cx="450" cy="45" r="7" style="animation-delay:1.5s"/>
+          <circle class="n" cx="495" cy="110" r="7" style="animation-delay:1.8s"/><circle class="n" cx="250" cy="135" r="6" style="animation-delay:2.1s"/>
+        </g>
+      </svg>
+    </div>
+    <div class="pulse"><h2>Puls dnia: liczba wpisów wg kategorii</h2><div id="pulse"></div></div>
+  </section>
+
+  <div class="bar-tools">
+    <input id="q" type="search" placeholder="Szukaj w tytułach i tagach" aria-label="Szukaj">
+    <select id="sort" aria-label="Sortowanie">
+      <option value="importance">Najważniejsze</option>
+      <option value="date">Najnowsze</option>
+    </select>
+    <span class="count" id="count" aria-live="polite"></span>
+  </div>
+  <main class="grid" id="grid"></main>
+  <footer>Strona czyta wpisy z jednego źródła danych (JSON). Podmień je ręcznie albo podepnij automatyzację.</footer>
+</div>
+
+<!-- ===== 3. DANE – jedyne miejsce z treścią =====
+Schemat wpisu: id (unikalny), date (RRRR-MM-DD), category (klucz z CATEGORIES), title, summary,
+why (opcjonalnie), importance (1-5), source, url (http/https), tags (tablica),
+image (opcjonalnie: adres http/https albo data:image; bez niego rysuje się okładka generatywna z id wpisu).
+Automatyzacja może zastąpić cały ten blok albo wywołać Sygnal.setItems([...]). -->
+<script type="application/json" id="news-data">
+{"demo":true,"items":[
+{"id":"d1","date":"2026-11-02","category":"modele","title":"Nowy model z kontekstem na całe repozytorium","summary":"Laboratorium pokazało model, który czyta cały projekt kodu w jednym zapytaniu.","why":"Skraca pracę nad dużymi bazami kodu, bo nie trzeba ręcznie wybierać plików.","importance":5,"source":"Przykładowe Laboratorium","url":"https://example.com/1","tags":["kod","kontekst"]},
+{"id":"d2","date":"2026-11-02","category":"regulacje","title":"Projekt przepisów o oznaczaniu treści generowanych przez AI","summary":"Komisja ekspertów zaproponowała obowiązkowe oznaczenia dla obrazów i nagrań.","why":"Wydawcy i platformy będą musiały dodać etykiety i narzędzia do ich weryfikacji.","importance":4,"source":"Przykładowy Dziennik","url":"https://example.com/2","tags":["prawo","deepfake"]},
+{"id":"d3","date":"2026-11-01","category":"badania","title":"Metoda uczenia, która zmniejsza zużycie energii o jedną trzecią","summary":"Zespół akademicki opisał technikę treningu wymagającą mniej obliczeń przy podobnej jakości.","why":"Niższy koszt treningu otwiera drogę mniejszym zespołom.","importance":4,"source":"Przykładowy Preprint","url":"https://example.com/3","tags":["efektywność","trening"]},
+{"id":"d4","date":"2026-11-01","category":"narzedzia","title":"Edytor tekstu z wbudowanym agentem do researchu","summary":"Popularny edytor dodał panel, który zbiera źródła i buduje szkic notatki.","why":"Badanie tematu i pisanie dzieją się w jednym oknie.","importance":3,"source":"Przykładowy Blog Produktowy","url":"https://example.com/4","tags":["agenci","produktywność"]},
+{"id":"d5","date":"2026-10-31","category":"biznes","title":"Rekordowa runda finansowania dla startupu od agentów firmowych","summary":"Inwestorzy zasilili młodą spółkę kwotą, która podwaja jej wycenę z wiosny.","why":"Pokazuje, że rynek stawia na automatyzację procesów w firmach.","importance":3,"source":"Przykładowy Serwis Biznesowy","url":"https://example.com/5","tags":["inwestycje","agenci"]},
+{"id":"d6","date":"2026-10-30","category":"modele","title":"Mały model działa lokalnie na telefonie bez internetu","summary":"Producent pokazał model o niewielkich wymaganiach, który streszcza i tłumaczy offline.","why":"Prywatność i brak opóźnień przemawiają za przetwarzaniem na urządzeniu.","importance":4,"source":"Przykładowe Laboratorium","url":"https://example.com/6","tags":["lokalnie","mobile"]},
+{"id":"d7","date":"2026-10-29","category":"badania","title":"Nowy test sprawdza, czy modele naprawdę rozumują krok po kroku","summary":"Autorzy testu twierdzą, że wiele wyników opiera się na zapamiętanych wzorcach.","why":"Wyniki rankingów warto czytać ostrożniej.","importance":3,"source":"Przykładowy Preprint","url":"https://example.com/7","tags":["benchmarki","rozumowanie"]},
+{"id":"d8","date":"2026-10-28","category":"regulacje","title":"Urzędy dwóch krajów uzgodniły wspólne zasady audytu modeli","summary":"Porozumienie ma ujednolicić wymagania wobec dostawców działających w obu krajach.","why":"Mniej sprzecznych wymogów to prostsze wdrożenia transgraniczne.","importance":2,"source":"Przykładowy Dziennik","url":"https://example.com/8","tags":["audyt","UE"]},
+{"id":"d9","date":"2026-10-27","category":"narzedzia","title":"Biblioteka open source do testowania promptów w pipeline CI","summary":"Narzędzie uruchamia zestawy testów jakości przy każdej zmianie w repozytorium.","why":"Regresje w odpowiedziach modeli wychodzą przed wdrożeniem.","importance":2,"source":"Przykładowy Blog Techniczny","url":"https://example.com/9","tags":["open source","testy"]}
+]}
+</script>
+
+<script>
+/* ===== 4. KONFIGURACJA – automatyzacja podpina się tutaj ===== */
+const CONFIG = {
+  feedUrl: null,        // np. "https://twoja-domena.pl/news.json" (musi zwracać {items:[...]} lub [...])
+  refreshMs: 0,         // np. 300000 = odświeżanie co 5 min (0 = wyłączone)
+  locale: "pl-PL"
+};
+const CATEGORIES = { modele:"Modele", badania:"Badania", biznes:"Biznes", regulacje:"Regulacje", narzedzia:"Narzędzia" };
+
+/* ===== 5. LOGIKA – zwykle bez zmian ===== */
+const $ = s => document.querySelector(s);
+const state = { items:[], cat:"all", q:"", sort:"importance", onlySaved:false, saved:new Set(), open:new Set() };
+const fmt = new Intl.DateTimeFormat(CONFIG.locale,{day:"numeric",month:"long"});
+
+function h(tag, attrs={}, kids=[]){
+  const el = document.createElement(tag);
+  for (const [k,v] of Object.entries(attrs)){
+    if (k==="class") el.className=v; else if (k==="text") el.textContent=v;
+    else if (k.startsWith("on")) el.addEventListener(k.slice(2),v); else el.setAttribute(k,v);
+  }
+  [].concat(kids).forEach(c=>c&&el.append(c));
+  return el;
+}
+const safeUrl = u => /^https?:\/\//i.test(u||"") ? u : null;
+function normalize(list){
+  return (Array.isArray(list)?list:[]).filter(i=>i&&i.id&&i.title).map(i=>({
+    id:String(i.id), date:i.date||"", category:CATEGORIES[i.category]?i.category:"narzedzia",
+    title:String(i.title), summary:String(i.summary||""), why:String(i.why||""),
+    importance:Math.min(5,Math.max(1,+i.importance||1)), source:String(i.source||""),
+    url:safeUrl(i.url), image:/^(https?:\/\/|data:image\/)/i.test(i.image||"")?i.image:null, tags:Array.isArray(i.tags)?i.tags.map(String):[]
+  }));
+}
+async function loadData(){
+  let data = JSON.parse($("#news-data").textContent), demo = !!data.demo;
+  if (CONFIG.feedUrl){
+    try{
+      const r = await fetch(CONFIG.feedUrl,{cache:"no-store"});
+      if (!r.ok) throw new Error(r.status);
+      data = await r.json(); demo = !!data.demo;
+    }catch(e){ console.warn("Feed niedostępny, używam danych wbudowanych", e); }
+  }
+  $("#demoNote").hidden = !demo;
+  setItems(Array.isArray(data)?data:data.items);
+}
+function setItems(list){ state.items = normalize(list); render(); }
+
+function visible(){
+  const q = state.q.trim().toLowerCase();
+  return state.items.filter(i =>
+    (state.cat==="all"||i.category===state.cat) &&
+    (!state.onlySaved||state.saved.has(i.id)) &&
+    (!q || (i.title+" "+i.tags.join(" ")).toLowerCase().includes(q))
+  ).sort((a,b)=> state.sort==="date" ? b.date.localeCompare(a.date) : b.importance-a.importance || b.date.localeCompare(a.date));
+}
+function renderPulse(){
+  const box = $("#pulse"); box.replaceChildren();
+  const counts = {}; state.items.forEach(i=>counts[i.category]=(counts[i.category]||0)+1);
+  const max = Math.max(1,...Object.values(counts));
+  const all = [["all","Wszystko",state.items.length], ...Object.keys(CATEGORIES).map(k=>[k,CATEGORIES[k],counts[k]||0])];
+  all.forEach(([k,label,n])=>{
+    const bar = h("div",{class:"bar"});
+    box.append(h("button",{class:"row","data-cat":k,"aria-pressed":String(state.cat===k),onclick:()=>{state.cat=k;render()}},
+      [h("span",{text:label}), h("div",{},bar), h("b",{text:String(n)})]));
+    requestAnimationFrame(()=>bar.style.width=(n/(k==="all"?state.items.length||1:max)*100)+"%");
+  });
+}
+function card(i){
+  const open = state.open.has(i.id), saved = state.saved.has(i.id);
+  const meter = h("div",{class:"meter",title:"Waga: "+i.importance+"/5"},
+    [1,2,3,4,5].map(n=>h("span",{class:n<=i.importance?"on":""})));
+  const more = h("div",{class:"more"},[
+    i.why&&h("p",{text:i.why}),
+    i.tags.length&&h("p",{text:i.tags.map(t=>"#"+t).join(" ")}),
+    i.url&&h("a",{href:i.url,target:"_blank",rel:"noopener noreferrer",text:"Źródło: "+(i.source||"link")})
+  ]);
+  return h("article",{class:"card"+(open?" open":""),"data-cat":i.category},[
+    coverEl(i),
+    h("div",{class:"meta"},[h("span",{class:"tag",text:CATEGORIES[i.category]}),h("span",{text:i.date?fmt.format(new Date(i.date)):""})]),
+    h("h3",{text:i.title}), h("p",{text:i.summary}), more,
+    h("div",{class:"foot"},[meter, h("div",{class:"acts"},[
+      h("button",{class:"btn","aria-expanded":String(open),text:open?"Zwiń":"Rozwiń",onclick:()=>{open?state.open.delete(i.id):state.open.add(i.id);render()}}),
+      h("button",{class:"btn","aria-pressed":String(saved),text:saved?"Zapisano":"Zapisz",onclick:()=>{toggleSaved(i.id)}})
+    ])])
+  ]);
+}
+function hash(s){let x=2166136261;for(const c of s){x^=c.charCodeAt(0);x=Math.imul(x,16777619)}return x>>>0}
+function rnd(seed){return()=>{seed=Math.imul(seed^seed>>>15,2246822507)>>>0;seed=(seed^seed>>>13)>>>0;return seed/4294967296}}
+function art(i){
+  const r=rnd(hash(i.id)||1), f=v=>v.toFixed(0); let s="";
+  if(i.category==="modele"){
+    const p=Array.from({length:7},(_,k)=>[30+k*57+r()*18,22+r()*76]);
+    s+=`<path d="M${p.map(q=>f(q[0])+" "+f(q[1])).join("L")}" fill="none" stroke="currentColor" stroke-width="2" opacity=".4"/>`;
+    s+=p.map((q,k)=>`<circle class="m" cx="${f(q[0])}" cy="${f(q[1])}" r="${5+Math.floor(r()*6)}" fill="currentColor" style="animation-delay:${k*.12}s"/>`).join("");
+  }else if(i.category==="badania"){
+    const a=14+r()*22, ph=r()*6, pts=[];
+    for(let x=0;x<=400;x+=20)pts.push(f(x)+" "+f(60+Math.sin(x/45+ph)*a));
+    s+=`<path d="M0 120L${pts.join("L")}L400 120Z" fill="currentColor" opacity=".16"/><path d="M${pts.join("L")}" fill="none" stroke="currentColor" stroke-width="3"/>`;
+    s+=`<circle class="m" cx="380" cy="${f(60+Math.sin(380/45+ph)*a)}" r="7" fill="currentColor"/>`;
+  }else if(i.category==="biznes"){
+    for(let k=0;k<9;k++){const hh=20+k*8+r()*18;s+=`<rect class="m" x="${20+k*42}" y="${f(120-hh)}" width="28" height="${f(hh)}" rx="4" fill="currentColor" opacity="${(.35+k*.07).toFixed(2)}" style="animation-delay:${k*.1}s"/>`}
+  }else if(i.category==="regulacje"){
+    for(let y=0;y<3;y++)for(let x=0;x<10;x++){const on=r()>.55;s+=`<rect ${on?'class="m" ':""}x="${16+x*38}" y="${14+y*34}" width="28" height="24" rx="6" fill="currentColor" opacity="${on?.8:.18}"/>`}
+  }else{
+    for(let k=0;k<5;k++){s+=`<rect class="m" x="${24+(k%3)*28}" y="${14+k*20}" width="${60+Math.floor(r()*190)}" height="10" rx="5" fill="currentColor" opacity="${k%2?.45:.8}" style="animation-delay:${k*.12}s"/>`}
+  }
+  return `<svg viewBox="0 0 400 120" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${s}</svg>`;
+}
+function coverEl(i){
+  const box=h("div",{class:"cover"});
+  const fallback=()=>{box.innerHTML=art(i)};
+  if(i.image) box.append(h("img",{src:i.image,alt:"",loading:"lazy",onerror:fallback})); else fallback();
+  return box;
+}
+function toggleSaved(id){
+  state.saved.has(id)?state.saved.delete(id):state.saved.add(id);
+  try{ localStorage.setItem("sygnal-saved",JSON.stringify([...state.saved])); }catch(e){}
+  render();
+}
+function render(){
+  renderPulse();
+  const list = visible(), grid = $("#grid"); grid.replaceChildren();
+  list.forEach(i=>grid.append(card(i)));
+  if(!list.length) grid.append(h("div",{class:"empty",text:"Brak wpisów dla tych filtrów. Wyczyść wyszukiwanie albo wybierz „Wszystko”."}));
+  $("#count").textContent = list.length+" z "+state.items.length+" wpisów";
+  $("#savedN").textContent = state.saved.size;
+  $("#savedBtn").setAttribute("aria-pressed",String(state.onlySaved));
+}
+
+$("#q").addEventListener("input",e=>{state.q=e.target.value;render()});
+$("#sort").addEventListener("change",e=>{state.sort=e.target.value;render()});
+$("#savedBtn").addEventListener("click",()=>{state.onlySaved=!state.onlySaved;render()});
+$("#themeBtn").addEventListener("click",()=>{
+  const root=document.documentElement;
+  const dark = root.dataset.theme ? root.dataset.theme==="dark" : matchMedia("(prefers-color-scheme:dark)").matches;
+  root.dataset.theme = dark?"light":"dark";
+  try{ localStorage.setItem("sygnal-theme",root.dataset.theme); }catch(e){}
+});
+try{
+  const t=localStorage.getItem("sygnal-theme"); if(t) document.documentElement.dataset.theme=t;
+  state.saved=new Set(JSON.parse(localStorage.getItem("sygnal-saved")||"[]"));
+}catch(e){}
+
+window.Sygnal = { setItems, reload:loadData };   // API dla automatyzacji
+loadData();
+if (CONFIG.refreshMs>0) setInterval(loadData, CONFIG.refreshMs);
+</script>
+</body>
+</html>
