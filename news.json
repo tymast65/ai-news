@@ -1,1 +1,22 @@
-{"demo": false, "items": []}
+{
+  "demo": false,
+  "items": [
+    {
+      "id": "r3tbfg",
+      "date": "2026-11-04",
+      "category": "narzedzia",
+      "title": "Dharma Field Extractor: Nowe narzędzie do zamiany dokumentów w uporządkowany JSON",
+      "summary": "Dharma Field Extractor to zaawansowane narzędzie AI zaprojektowane do automatycznej ekstrakcji danych z dowolnych dokumentów i konwertowania ich do strukturalnego formatu JSON. Rozwiązanie to znacząco przyspiesza procesy digitalizacji i przetwarzania dokumentacji w firmach.",
+      "why": "To ważne, ponieważ automatyzuje żmudny proces wprowadzania danych i ułatwia integrację nieustrukturyzowanych dokumentów z systemami IT.",
+      "importance": 4,
+      "source": "",
+      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "tags": [
+        "ekstrakcja danych",
+        "JSON",
+        "automatyzacja",
+        "dokumenty"
+      ]
+    }
+  ]
+}
