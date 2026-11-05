@@ -5,9 +5,9 @@
       "id": "r3tbfg",
       "date": "2026-11-04",
       "category": "narzedzia",
-      "title": "Dharma Field Extractor: Nowe narzędzie do wyciągania strukturalnych danych z każdego dokumentu",
-      "summary": "Dharma Field Extractor to zaawansowane narzędzie AI, które potrafi przekształcić dowolny dokument wejściowy w uporządkowane pola w formacie JSON. Ułatwia to automatyzację przetwarzania nieustrukturyzowanych informacji w firmach.",
-      "why": "To ważne, ponieważ drastycznie skraca czas potrzebny na ręczne wprowadzanie danych z różnorodnych plików tekstowych i formularzy.",
+      "title": "Dharma Field Extractor: Nowe narzędzie do wyciągania danych do JSON",
+      "summary": "Dharma Field Extractor to zaawansowane narzędzie sztucznej inteligencji, które potrafi przetworzyć dowolny dokument wejściowy i uporządkować zawarte w nim dane w strukturę JSON. Rozwiązanie to znacząco przyspiesza automatyzację biurową i przetwarzanie nieustrukturyzowanych informacji.",
+      "why": "To ważne, ponieważ narzędzie automatyzuje żmudny proces ekstrakcji danych z różnorodnych dokumentów bezpośrednio do formatu programistycznego.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
@@ -22,9 +22,9 @@
       "id": "z4gnxs",
       "date": "2026-11-03",
       "category": "badania",
-      "title": "StateBench: Nowy test sprawdza, jak modele AI śledzą zmiany w długich tekstach",
-      "summary": "Naukowcy stworzyli benchmark StateBench do oceny zdolności modeli językowych w śledzeniu dynamicznych zmian stanu w rozbudowanych dokumentach. Narzędzie ujawnia, jak duże modele radzą sobie (lub nie) z utrzymaniem spójności w długich kontekstach.",
-      "why": "To ważne, ponieważ zrozumienie długich dokumentów i dynamicznych zmian w nich jest kluczowe dla rozwoju niezawodnych asystentów AI i agentów.",
+      "title": "StateBench: Nowy test sprawdza, jak modele AI śledzą zmiany w długich dokumentach",
+      "summary": "Naukowcy stworzyli StateBench, nowy benchmark oceniający zdolność dużych modeli językowych do śledzenia ewolucji stanu obiektów w rozbudowanych tekstach. Narzędzie ma pomóc w identyfikacji luk w pamięci długoterminowej sztucznej inteligencji.",
+      "why": "To ważne, ponieważ zrozumienie długich kontekstów jest kluczowe dla rozwoju niezawodnych asystentów AI i analizy skomplikowanych dokumentów.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/allenai/statebench",
@@ -32,7 +32,7 @@
         "StateBench",
         "modele językowe",
         "benchmark",
-        "analiza tekstów"
+        "analiza tekstu"
       ]
     },
     {
@@ -40,26 +40,26 @@
       "date": "2026-11-03",
       "category": "narzedzia",
       "title": "Palette: Jak nauczyć mały model AI tworzenia prezentacji w Twoim stylu?",
-      "summary": "Nowy system Palette potrafi dostosować mniejsze modele sztucznej inteligencji do generowania slajdów idealnie dopasowanych do unikalnego języka wizualnego marki. Dzięki temu użytkownicy mogą tworzyć spójne prezentacje szybciej i bez dużych zasobów obliczeniowych.",
-      "why": "Technologia ta demokratyzuje dostęp do spersonalizowanego brandingu w generatywnym designie.",
+      "summary": "Nowy system Palette potrafi dostosować małe modele językowe do generowania profesjonalnych prezentacji idealnie dopasowanych do wytycznych wizualnych danej marki. Dzięki temu mniejsze i tańsze modele mogą skutecznie konkurować z gigantami w zadaniach projektowych.",
+      "why": "To ważne, ponieważ ułatwia automatyzację tworzenia materiałów firmowych bez konieczności polegania na drogich, dużych modelach AI.",
       "importance": 3,
       "source": "",
       "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
       "tags": [
         "Palette",
-        "design",
         "prezentacje",
-        "modele AI",
-        "branding"
+        "design",
+        "małe modele",
+        "automatyzacja"
       ]
     },
     {
       "id": "17ode7c",
       "date": "2026-11-03",
-      "category": "narzedzia",
-      "title": "CWE-bench v2: Rewolucja w testowaniu bezpieczeństwa AI",
-      "summary": "Pojawiła się nowa wersja benchmarku CWE-bench v2, która oferuje większe pokrycie, wyższą jakość oraz pełną przejrzystość w ocenie podatności modeli. Narzędzie to pozwala skuteczniej wykrywać luki w zabezpieczeniach systemów sztucznej inteligencji.",
-      "why": "To ważne, ponieważ wyższy poziom bezpieczeństwa modeli AI jest kluczowy przed ich wdrożeniem w krytycznych sektorach gospodarki.",
+      "category": "badania",
+      "title": "CWE-bench v2 debiutuje: Nowy standard testowania bezpieczeństwa AI",
+      "summary": "Pojawiła się druga wersja benchmarku CWE-bench, oferująca większe pokrycie, wyższą jakość oraz pełniejszą przejrzystość w ocenie modeli AI. Narzędzie to ma kluczowe znaczenie dla wykrywania podatności w kodzie generowanym przez sztuczną inteligencję.",
+      "why": "To ważny krok w kierunku tworzenia bezpieczniejszego oprogramowania generowanego przez sztuczną inteligencję.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/cwe-bench",
@@ -67,24 +67,24 @@
         "CWE-bench",
         "bezpieczeństwo AI",
         "cyberbezpieczeństwo",
-        "benchmarki"
+        "modele językowe"
       ]
     },
     {
       "id": "18ew4zk",
       "date": "2026-11-03",
       "category": "narzedzia",
-      "title": "Nowe kontrakty integracyjne dla modeli Transformers",
-      "summary": "Wprowadzono nowe standardy i umowy dotyczące integracji modeli typu Transformers w ekosystemie sztucznej inteligencji. Rozwiązanie to ma na celu usprawnienie wdrażania zaawansowanych architektur w projektach komercyjnych.",
-      "why": "Ujednolicenie zasad integracji modeli ułatwia deweloperom bezpieczne i skalowalne wdrażanie technologii AI w aplikacjach.",
+      "title": "Nowe kontrakty integracyjne dla modeli Transformers od Hugging Face",
+      "summary": "Hugging Face wprowadza kontrakty integracyjne dla modeli typu Transformers, co ma ustandaryzować i ułatwić wdrażanie zaawansowanych systemów AI. Nowe rozwiązanie usprawnia współpracę między różnymi frameworkami i komponentami w ekosystemie uczenia maszynowego.",
+      "why": "To ważne, ponieważ standaryzacja integracji modeli przyspiesza rozwój aplikacji opartych na AI i obniża koszty ich wdrożenia.",
       "importance": 3,
       "source": "",
       "url": "https://huggingface.co/blog/transformers-mic",
       "tags": [
         "Transformers",
-        "integracja",
-        "modele AI",
-        "programowanie"
+        "Hugging Face",
+        "MLOps",
+        "narzędzia AI"
       ]
     }
   ]
