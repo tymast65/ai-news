@@ -2,12 +2,48 @@
   "demo": false,
   "items": [
     {
+      "id": "x3cycm",
+      "date": "2026-11-05",
+      "category": "modele",
+      "title": "NVIDIA prezentuje Cosmos: Nowe modele otwarte do interaktywnej symulacji świata",
+      "summary": "NVIDIA zapowiedziała rodzinę otwartych modeli Cosmos, zaprojektowanych z myślą o zaawansowanej, interaktywnej symulacji rzeczywistości. Technologia ta ma na celu przyspieszenie rozwoju robotyki oraz pojazdów autonomicznych dzięki lepszemu zrozumieniu fizyki świata.",
+      "why": "To ważny krok w stronę łączenia sztucznej inteligencji z zaawansowanym rozumieniem praw fizyki w czasie rzeczywistym.",
+      "importance": 5,
+      "source": "",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "tags": [
+        "NVIDIA",
+        "Cosmos",
+        "symulacja",
+        "modele otwarte",
+        "robotyka"
+      ]
+    },
+    {
+      "id": "1pabz4u",
+      "date": "2026-11-05",
+      "category": "narzedzia",
+      "title": "Phonon TTS: Przełomowy syntezator mowy działa lokalnie i bije rekordy",
+      "summary": "Nowy system Phonon TTS oferuje wysokiej jakości generowanie mowy bezpośrednio na urządzeniu, wyprzedzając dotychczasowe modele w testach wydajnościowych. To rozwiązanie łączy zaawansowaną sztuczną inteligencję z pełną prywatnością i szybkością działania offline.",
+      "why": "Demokratyzuje dostęp do wysokiej jakości syntezy mowy działającej w czasie rzeczywistym bez potrzeby korzystania z chmury.",
+      "importance": 4,
+      "source": "",
+      "url": "https://huggingface.co/blog/phonon-tts",
+      "tags": [
+        "TTS",
+        "synteza mowy",
+        "edge AI",
+        "Phonon TTS",
+        "audio AI"
+      ]
+    },
+    {
       "id": "r3tbfg",
       "date": "2026-11-04",
       "category": "narzedzia",
-      "title": "Dharma Field Extractor: Nowe narzędzie do wyciągania danych do JSON",
-      "summary": "Dharma Field Extractor to zaawansowane narzędzie sztucznej inteligencji, które potrafi przetworzyć dowolny dokument wejściowy i uporządkować zawarte w nim dane w strukturę JSON. Rozwiązanie to znacząco przyspiesza automatyzację biurową i przetwarzanie nieustrukturyzowanych informacji.",
-      "why": "To ważne, ponieważ narzędzie automatyzuje żmudny proces ekstrakcji danych z różnorodnych dokumentów bezpośrednio do formatu programistycznego.",
+      "title": "Dharma Field Extractor: Wyciągaj strukturalne dane z każdego dokumentu",
+      "summary": "Nowe narzędzie sztucznej inteligencji pozwala na szybkie i precyzyjne wyciąganie danych z dowolnych dokumentów i formatowanie ich bezpośrednio do obiektu JSON. To rozwiązanie znacznie przyspiesza procesy cyfryzacji i automatyzacji biurowej.",
+      "why": "To ważne, ponieważ automatyczna ekstrakcja strukturalnych danych z nieustrukturyzowanych dokumentów oszczędza setki godzin pracy w biznesie.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
@@ -15,24 +51,24 @@
         "ekstrakcja danych",
         "JSON",
         "automatyzacja",
-        "przetwarzanie dokumentów"
+        "dokumenty"
       ]
     },
     {
       "id": "z4gnxs",
       "date": "2026-11-03",
       "category": "badania",
-      "title": "StateBench: Nowy test sprawdza, jak modele AI śledzą zmiany w długich dokumentach",
-      "summary": "Naukowcy stworzyli StateBench, nowy benchmark oceniający zdolność dużych modeli językowych do śledzenia ewolucji stanu obiektów w rozbudowanych tekstach. Narzędzie ma pomóc w identyfikacji luk w pamięci długoterminowej sztucznej inteligencji.",
-      "why": "To ważne, ponieważ zrozumienie długich kontekstów jest kluczowe dla rozwoju niezawodnych asystentów AI i analizy skomplikowanych dokumentów.",
+      "title": "StateBench: Nowy test sprawdza, jak modele AI śledzą zmiany w długich tekstach",
+      "summary": "Naukowcy stworzyli StateBench, nowy punkt odniesienia do testowania zdolności dużych modeli językowych w śledzeniu dynamicznych zmian stanu obiektów na przestrzeni tysięcy słów. Badania pokazują, że nawet zaawansowane modele mają problem z logicznym powiązaniem faktów z odległych części dokumentu.",
+      "why": "To ważne, ponieważ zdolność do rozumienia długich kontekstów jest kluczowa dla tworzenia niezawodnych asystentów AI analizujących całe książki czy umowy.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/allenai/statebench",
       "tags": [
         "StateBench",
-        "modele językowe",
-        "benchmark",
-        "analiza tekstu"
+        "duże modele językowe",
+        "LLM",
+        "analiza tekstów"
       ]
     },
     {
@@ -40,9 +76,9 @@
       "date": "2026-11-03",
       "category": "narzedzia",
       "title": "Palette: Jak nauczyć mały model AI tworzenia prezentacji w Twoim stylu?",
-      "summary": "Nowy system Palette potrafi dostosować małe modele językowe do generowania profesjonalnych prezentacji idealnie dopasowanych do wytycznych wizualnych danej marki. Dzięki temu mniejsze i tańsze modele mogą skutecznie konkurować z gigantami w zadaniach projektowych.",
-      "why": "To ważne, ponieważ ułatwia automatyzację tworzenia materiałów firmowych bez konieczności polegania na drogich, dużych modelach AI.",
-      "importance": 3,
+      "summary": "Nowy system Palette potrafi dostosować małe modele językowe do tworzenia profesjonalnych prezentacji idealnie dopasowanych do wytycznych wizualnych danej marki. Technologia ta znacząco ułatwia automatyzację tworzenia spójnych wizualnie materiałów firmowych.",
+      "why": "To ważne, ponieważ pozwala mniejszym modelom AI skutecznie generować gotowe dokumenty w unikalnym stylu wizualnym firmy bez użycia zasobożernych gigantów.",
+      "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
       "tags": [
@@ -50,41 +86,7 @@
         "prezentacje",
         "design",
         "małe modele",
-        "automatyzacja"
-      ]
-    },
-    {
-      "id": "17ode7c",
-      "date": "2026-11-03",
-      "category": "badania",
-      "title": "CWE-bench v2 debiutuje: Nowy standard testowania bezpieczeństwa AI",
-      "summary": "Pojawiła się druga wersja benchmarku CWE-bench, oferująca większe pokrycie, wyższą jakość oraz pełniejszą przejrzystość w ocenie modeli AI. Narzędzie to ma kluczowe znaczenie dla wykrywania podatności w kodzie generowanym przez sztuczną inteligencję.",
-      "why": "To ważny krok w kierunku tworzenia bezpieczniejszego oprogramowania generowanego przez sztuczną inteligencję.",
-      "importance": 4,
-      "source": "",
-      "url": "https://huggingface.co/blog/cwe-bench",
-      "tags": [
-        "CWE-bench",
-        "bezpieczeństwo AI",
-        "cyberbezpieczeństwo",
-        "modele językowe"
-      ]
-    },
-    {
-      "id": "18ew4zk",
-      "date": "2026-11-03",
-      "category": "narzedzia",
-      "title": "Nowe kontrakty integracyjne dla modeli Transformers od Hugging Face",
-      "summary": "Hugging Face wprowadza kontrakty integracyjne dla modeli typu Transformers, co ma ustandaryzować i ułatwić wdrażanie zaawansowanych systemów AI. Nowe rozwiązanie usprawnia współpracę między różnymi frameworkami i komponentami w ekosystemie uczenia maszynowego.",
-      "why": "To ważne, ponieważ standaryzacja integracji modeli przyspiesza rozwój aplikacji opartych na AI i obniża koszty ich wdrożenia.",
-      "importance": 3,
-      "source": "",
-      "url": "https://huggingface.co/blog/transformers-mic",
-      "tags": [
-        "Transformers",
-        "Hugging Face",
-        "MLOps",
-        "narzędzia AI"
+        "AI"
       ]
     }
   ]
