@@ -2,20 +2,55 @@
   "demo": false,
   "items": [
     {
+      "id": "bhyne5",
+      "date": "2026-11-06",
+      "category": "badania",
+      "title": "ToyBlocks: Nowe środowisko wirtualne rewolucjonizuje naukę robotów",
+      "summary": "Powstało ToyBlocks – innowacyjne i kontrolowane środowisko symulacyjne stworzone z myślą o efektywnym trenowaniu oraz precyzyjnej ewentualności algorytmów robotycznych. Narzędzie to ma na celu przyspieszenie badań nad sztuczną inteligencją ucieleśnioną.",
+      "why": "To ważne, ponieważ ustrukturyzowane środowiska testowe są kluczem do bezpiecznego i szybszego przenoszenia umiejętności AI z symulacji do rzeczywistych robotów.",
+      "importance": 3,
+      "source": "",
+      "url": "https://huggingface.co/blog/allenai/toyblocks",
+      "tags": [
+        "robotyka",
+        "symulacja",
+        "uczenie maszynowe",
+        "AI ucieleśnione"
+      ]
+    },
+    {
+      "id": "fgc1ew",
+      "date": "2026-11-06",
+      "category": "modele",
+      "title": "Egipski i nigeryjski angielski debiutują w Open ASR Leaderboard",
+      "summary": "Open ASR Leaderboard rozszerza swoje możliwości o odmiany języka angielskiego używane w Egipcie i Nigeryjii. Krok ten ma na celu poprawę dokładności systemów rozpoznawania mowy dla użytkowników z Afryki i Bliskiego Wschodu.",
+      "why": "To ważne, ponieważ zwiększa inkluzywność modeli AI oraz poprawia jakość rozpoznawania lokalnych akcentów języka angielskiego.",
+      "importance": 3,
+      "source": "",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+      "tags": [
+        "ASR",
+        "OpenAI",
+        "rozpoznawanie mowy",
+        "AI",
+        "angielski"
+      ]
+    },
+    {
       "id": "x3cycm",
       "date": "2026-11-05",
       "category": "modele",
-      "title": "NVIDIA prezentuje Cosmos: Nowe modele otwarte do interaktywnej symulacji świata",
-      "summary": "NVIDIA zapowiedziała rodzinę otwartych modeli Cosmos, zaprojektowanych z myślą o zaawansowanej, interaktywnej symulacji rzeczywistości. Technologia ta ma na celu przyspieszenie rozwoju robotyki oraz pojazdów autonomicznych dzięki lepszemu zrozumieniu fizyki świata.",
-      "why": "To ważny krok w stronę łączenia sztucznej inteligencji z zaawansowanym rozumieniem praw fizyki w czasie rzeczywistym.",
-      "importance": 5,
+      "title": "NVIDIA Cosmos: Nowe modele otwarte do interaktywnej symulacji świata",
+      "summary": "NVIDIA zaprezentowała Cosmos 3, zestaw nowych otwartych modeli stworzonych z myślą o zaawansowanej i interaktywnej symulacji świata. Rozwiązanie to ma przyspieszyć rozwój sztucznej inteligencji w obszarze robotyki i pojazdów autonomicznych.",
+      "why": "To ważne, ponieważ nowe modele dają badaczom i deweloperom potężne narzędzie do realistycznego odwzorowywania fizyki świata w czasie rzeczywistym.",
+      "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
       "tags": [
         "NVIDIA",
         "Cosmos",
-        "symulacja",
         "modele otwarte",
+        "symulacja",
         "robotyka"
       ]
     },
@@ -23,16 +58,16 @@
       "id": "1pabz4u",
       "date": "2026-11-05",
       "category": "narzedzia",
-      "title": "Phonon TTS: Przełomowy syntezator mowy działa lokalnie i bije rekordy",
-      "summary": "Nowy system Phonon TTS oferuje wysokiej jakości generowanie mowy bezpośrednio na urządzeniu, wyprzedzając dotychczasowe modele w testach wydajnościowych. To rozwiązanie łączy zaawansowaną sztuczną inteligencję z pełną prywatnością i szybkością działania offline.",
-      "why": "Demokratyzuje dostęp do wysokiej jakości syntezy mowy działającej w czasie rzeczywistym bez potrzeby korzystania z chmury.",
+      "title": "Phonon TTS: Przełomowa synteza mowy na urządzeniach, która bije rekordy",
+      "summary": "Nowy system Phonon TTS oferuje wysokiej jakości generowanie mowy bezpośrednio na urządzeniu, wyprzedzając dotychczasowe benchmarki. To rozwiązanie łączy zaawansowaną wydajność z pełną lokalnością przetwarzania danych.",
+      "why": "Umożliwia generowanie niezwykle naturalnego głosu bezpośrednio na sprzęcie użytkownika, co rewolucyjne wpływa na prywatność i szybkość działania aplikacji.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/phonon-tts",
       "tags": [
         "TTS",
         "synteza mowy",
-        "edge AI",
+        "AI on-device",
         "Phonon TTS",
         "audio AI"
       ]
@@ -41,9 +76,9 @@
       "id": "r3tbfg",
       "date": "2026-11-04",
       "category": "narzedzia",
-      "title": "Dharma Field Extractor: Wyciągaj strukturalne dane z każdego dokumentu",
-      "summary": "Nowe narzędzie sztucznej inteligencji pozwala na szybkie i precyzyjne wyciąganie danych z dowolnych dokumentów i formatowanie ich bezpośrednio do obiektu JSON. To rozwiązanie znacznie przyspiesza procesy cyfryzacji i automatyzacji biurowej.",
-      "why": "To ważne, ponieważ automatyczna ekstrakcja strukturalnych danych z nieustrukturyzowanych dokumentów oszczędza setki godzin pracy w biznesie.",
+      "title": "Dharma Field Extractor: Nowe narzędzie do zamiany dowolnych dokumentów w uporządkowany JSON",
+      "summary": "Dharma Field Extractor to zaawansowane narzędzie sztucznej inteligencji stworzone do automatycznej ekstrakcji strukturalnych danych z różnorodnych dokumentów. System pozwala na szybkie i bezproblemowe przekształcanie nieustrukturowanego tekstu w gotowe do użycia obiekty JSON.",
+      "why": "To rozwiązanie znacząco przyspiesza cyfryzację i automatyzację przetwarzania dokumentów w firmach i projektach programistycznych.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
@@ -51,42 +86,7 @@
         "ekstrakcja danych",
         "JSON",
         "automatyzacja",
-        "dokumenty"
-      ]
-    },
-    {
-      "id": "z4gnxs",
-      "date": "2026-11-03",
-      "category": "badania",
-      "title": "StateBench: Nowy test sprawdza, jak modele AI śledzą zmiany w długich tekstach",
-      "summary": "Naukowcy stworzyli StateBench, nowy punkt odniesienia do testowania zdolności dużych modeli językowych w śledzeniu dynamicznych zmian stanu obiektów na przestrzeni tysięcy słów. Badania pokazują, że nawet zaawansowane modele mają problem z logicznym powiązaniem faktów z odległych części dokumentu.",
-      "why": "To ważne, ponieważ zdolność do rozumienia długich kontekstów jest kluczowa dla tworzenia niezawodnych asystentów AI analizujących całe książki czy umowy.",
-      "importance": 4,
-      "source": "",
-      "url": "https://huggingface.co/blog/allenai/statebench",
-      "tags": [
-        "StateBench",
-        "duże modele językowe",
-        "LLM",
-        "analiza tekstów"
-      ]
-    },
-    {
-      "id": "pc0bdb",
-      "date": "2026-11-03",
-      "category": "narzedzia",
-      "title": "Palette: Jak nauczyć mały model AI tworzenia prezentacji w Twoim stylu?",
-      "summary": "Nowy system Palette potrafi dostosować małe modele językowe do tworzenia profesjonalnych prezentacji idealnie dopasowanych do wytycznych wizualnych danej marki. Technologia ta znacząco ułatwia automatyzację tworzenia spójnych wizualnie materiałów firmowych.",
-      "why": "To ważne, ponieważ pozwala mniejszym modelom AI skutecznie generować gotowe dokumenty w unikalnym stylu wizualnym firmy bez użycia zasobożernych gigantów.",
-      "importance": 4,
-      "source": "",
-      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "tags": [
-        "Palette",
-        "prezentacje",
-        "design",
-        "małe modele",
-        "AI"
+        "przetwarzanie dokumentów"
       ]
     }
   ]
