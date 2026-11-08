@@ -5,44 +5,44 @@
       "id": "bhyne5",
       "date": "2026-11-06",
       "category": "badania",
-      "title": "ToyBlocks: Nowe środowisko wirtualne rewolucjonizuje naukę robotów",
-      "summary": "Powstało ToyBlocks – innowacyjne i kontrolowane środowisko symulacyjne stworzone z myślą o efektywnym trenowaniu oraz precyzyjnej ewentualności algorytmów robotycznych. Narzędzie to ma na celu przyspieszenie badań nad sztuczną inteligencją ucieleśnioną.",
-      "why": "To ważne, ponieważ ustrukturyzowane środowiska testowe są kluczem do bezpiecznego i szybszego przenoszenia umiejętności AI z symulacji do rzeczywistych robotów.",
+      "title": "ToyBlocks: Nowe środowisko testowe rewolucjonizuje naukę robotów",
+      "summary": "Powstało ToyBlocks – innowacyjne i kontrolowane środowisko stworzone specjalnie na potrzeby efektywnego trenowania oraz precyzyjnej oceny algorytmów robotycznych. System ten pozwala na bezpieczne symulowanie złożonych zadań fizycznych w świecie wirtualnym.",
+      "why": "To ważne, ponieważ ujednolicone i kontrolowane środowiska testowe znacznie przyspieszają rozwój oraz wdrażanie sztucznej inteligencji w robotyce.",
       "importance": 3,
       "source": "",
       "url": "https://huggingface.co/blog/allenai/toyblocks",
       "tags": [
         "robotyka",
-        "symulacja",
         "uczenie maszynowe",
-        "AI ucieleśnione"
+        "symulacje",
+        "ToyBlocks"
       ]
     },
     {
       "id": "fgc1ew",
       "date": "2026-11-06",
-      "category": "modele",
-      "title": "Egipski i nigeryjski angielski debiutują w Open ASR Leaderboard",
-      "summary": "Open ASR Leaderboard rozszerza swoje możliwości o odmiany języka angielskiego używane w Egipcie i Nigeryjii. Krok ten ma na celu poprawę dokładności systemów rozpoznawania mowy dla użytkowników z Afryki i Bliskiego Wschodu.",
-      "why": "To ważne, ponieważ zwiększa inkluzywność modeli AI oraz poprawia jakość rozpoznawania lokalnych akcentów języka angielskiego.",
+      "category": "narzedzia",
+      "title": "Egipski i nigeryjski angielski nowym wyzwaniem dla modeli mowy w Open ASR Leaderboard",
+      "summary": "Open ASR Leaderboard został poszerzony o lokalne odmiany języka angielskiego z Egiptu i Nigerii. To krok ku lepszemu rozpoznawaniu regionalnych akcentów i różnorodności językowej w sztucznej inteligencji.",
+      "why": "Rozszerzenie bazy o afrykańskie odmiany angielskiego zwiększa inklusywność i precyzję systemów rozpoznawania mowy dla setek milionów nowych użytkowników.",
       "importance": 3,
       "source": "",
       "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
       "tags": [
         "ASR",
         "OpenAI",
+        "NLP",
         "rozpoznawanie mowy",
-        "AI",
-        "angielski"
+        "AI"
       ]
     },
     {
       "id": "x3cycm",
       "date": "2026-11-05",
       "category": "modele",
-      "title": "NVIDIA Cosmos: Nowe modele otwarte do interaktywnej symulacji świata",
-      "summary": "NVIDIA zaprezentowała Cosmos 3, zestaw nowych otwartych modeli stworzonych z myślą o zaawansowanej i interaktywnej symulacji świata. Rozwiązanie to ma przyspieszyć rozwój sztucznej inteligencji w obszarze robotyki i pojazdów autonomicznych.",
-      "why": "To ważne, ponieważ nowe modele dają badaczom i deweloperom potężne narzędzie do realistycznego odwzorowywania fizyki świata w czasie rzeczywistym.",
+      "title": "NVIDIA prezentuje Cosmos: Nowe modele open-source do symulacji światów 3D",
+      "summary": "NVIDIA zaprezentowała rodzinę otwartych modeli Cosmos 3 przeznaczonych do interaktywnej symulacji świata. Technologia ta ma na celu przyspieszenie rozwoju sztucznej inteligencji zdolnej do rozumienia i przewidywania praw fizyki w czasie rzeczywistym.",
+      "why": "To ważny krok w kierunku tworzenia zaawansowanych symulacji fizycznych, które są kluczowe dla rozwoju robotyki i pojazdów autonomicznych.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
@@ -50,7 +50,7 @@
         "NVIDIA",
         "Cosmos",
         "modele otwarte",
-        "symulacja",
+        "symulacje 3D",
         "robotyka"
       ]
     },
@@ -58,17 +58,16 @@
       "id": "1pabz4u",
       "date": "2026-11-05",
       "category": "narzedzia",
-      "title": "Phonon TTS: Przełomowa synteza mowy na urządzeniach, która bije rekordy",
-      "summary": "Nowy system Phonon TTS oferuje wysokiej jakości generowanie mowy bezpośrednio na urządzeniu, wyprzedzając dotychczasowe benchmarki. To rozwiązanie łączy zaawansowaną wydajność z pełną lokalnością przetwarzania danych.",
-      "why": "Umożliwia generowanie niezwykle naturalnego głosu bezpośrednio na sprzęcie użytkownika, co rewolucyjne wpływa na prywatność i szybkość działania aplikacji.",
+      "title": "Przełom w syntezie mowy: Phonon TTS trafia na urządzenia i dominuje w rankingach",
+      "summary": "Phonon TTS to nowy, wysokiej jakości system generowania mowy działający bezpośrednio na urządzeniu, który wyprzedza dotychczasowe modele w testach benchmarkowych. Zapewnia on naturalnie brzmiący głos bez konieczności przetwarzania w chmurze.",
+      "why": "To ważny krok w kierunku wydajnej sztucznej inteligencji audio działającej lokalnie, co zwiększa prywatność i obniża koszty.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/phonon-tts",
       "tags": [
         "TTS",
         "synteza mowy",
-        "AI on-device",
-        "Phonon TTS",
+        "edge AI",
         "audio AI"
       ]
     },
@@ -76,15 +75,15 @@
       "id": "r3tbfg",
       "date": "2026-11-04",
       "category": "narzedzia",
-      "title": "Dharma Field Extractor: Nowe narzędzie do zamiany dowolnych dokumentów w uporządkowany JSON",
-      "summary": "Dharma Field Extractor to zaawansowane narzędzie sztucznej inteligencji stworzone do automatycznej ekstrakcji strukturalnych danych z różnorodnych dokumentów. System pozwala na szybkie i bezproblemowe przekształcanie nieustrukturowanego tekstu w gotowe do użycia obiekty JSON.",
-      "why": "To rozwiązanie znacząco przyspiesza cyfryzację i automatyzację przetwarzania dokumentów w firmach i projektach programistycznych.",
+      "title": "Dharma Field Extractor: Nowe narzędzie do strukturyzacji danych z dokumentów",
+      "summary": "Dharma Field Extractor to nowoczesne narzędzie sztucznej inteligencji, które potrafi przekształcić dowolny dokument wejściowy w uporządkowane pola w formacie JSON. Umożliwia ono błyskawiczne wyciąganie kluczowych informacji z nieustrukturyzowanych plików tekstowych.",
+      "why": "To rozwiązanie znacząco przyspiesza automatyzację biurową i przetwarzanie dokumentacji w firmach.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
       "tags": [
-        "ekstrakcja danych",
         "JSON",
+        "ekstrakcja danych",
         "automatyzacja",
         "przetwarzanie dokumentów"
       ]
