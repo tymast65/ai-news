@@ -2,88 +2,89 @@
   "demo": false,
   "items": [
     {
+      "id": "13urluo",
+      "date": "2026-11-09",
+      "category": "modele",
+      "title": "Japońskie finanse w pigułce AI: NVIDIA przedstawia syntetyczny zestaw danych Nemotron",
+      "summary": "Powstał nowy syntetyczny zestaw danych Nemotron-Personas-Finance-Japan, który odwzorowuje japońską demografię oraz specyfikę tamtejszego sektora finansowego. Narzędzie ma pomóc w trenowaniu modeli sztucznej inteligencji dopasowanych do lokalnych realiów kulturowych i rynkowych.",
+      "why": "To ważny krok w kierunku tworzenia bezpiecznych i zlokalizowanych modeli finansowych AI dla specyficznych rynków azjatyckich.",
+      "importance": 3,
+      "source": "",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+      "tags": [
+        "NVIDIA",
+        "Nemotron",
+        "finanse",
+        "Japonia",
+        "dane syntetyczne"
+      ]
+    },
+    {
+      "id": "1grn8tn",
+      "date": "2026-11-09",
+      "category": "biznes",
+      "title": "Nowy system AI dba o stabilność zespołów eksperckich",
+      "summary": "Badacze przedstawili metodę HOPE, która pomaga utrzymać integralność kluczowych partnerstw eksperckich w organizacjach. Narzędzie to analizuje relacje i przepływ wiedzy, zapobiegając rozpadowi efektywnych zespołów.",
+      "why": "To ważne, ponieważ ułatwia zarządzanie talentami i chroni krytyczne kompetencje przed utratą w wyniku odejścia pracowników.",
+      "importance": 3,
+      "source": "",
+      "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+      "tags": [
+        "HR",
+        "zarządzanie",
+        "zespoły",
+        "biznes"
+      ]
+    },
+    {
       "id": "bhyne5",
       "date": "2026-11-06",
       "category": "narzedzia",
-      "title": "ToyBlocks: Nowe środowisko wirtualne rewolucjonizuje naukę robotów",
-      "summary": "Powstało ToyBlocks, innowacyjne i kontrolowane środowisko symulacyjne zaprojektowane z myślą o efektywnym uczeniu oraz precyzyjnej ewentualności algorytmów robotycznych. Narzędzie to pozwala na bezpieczne testowanie skomplikowanych zachowań maszyn w wirtualnym świecie.",
-      "why": "To ważne, ponieważ ustrukturyzowane środowiska testowe są kluczem do szybszego i bezpieczniejszego rozwoju sztucznej inteligencji w robotyce.",
+      "title": "ToyBlocks: Nowe wirtualne środowisko rewolucjonizuje naukę robotów",
+      "summary": "Opracowano nowe, kontrolowane środowisko symulacyjne ToyBlocks, które ma na celu usprawnienie procesu uczenia oraz ewaluacji algorytmów robotycznych. Narzędzie to pozwala na bezpieczne i precyzyjne testowanie zachowań robotów w zróżnicowanych warunkach.",
+      "why": "To ważne, ponieważ ustrukturyzowane środowiska testowe znacznie przyspieszają rozwój sztucznej inteligencji w robotyce.",
       "importance": 3,
       "source": "",
       "url": "https://huggingface.co/blog/allenai/toyblocks",
       "tags": [
         "robotyka",
         "symulacja",
-        "uczenie maszynowe"
+        "uczenie maszynowe",
+        "ToyBlocks"
       ]
     },
     {
       "id": "fgc1ew",
       "date": "2026-11-06",
-      "category": "modele",
-      "title": "Egipski i nigeryjski angielski na Open ASR Leaderboard",
-      "summary": "Platforma Open ASR Leaderboard została rozszerzona o odmiany języka angielskiego używane w Egipcie i Nigierii. Krok ten ma na celu poprawę dokładności systemów rozpoznawania mowy dla użytkowników z Afryki i Bliskiego Wschodu.",
-      "why": "To ważne dla inklusywności sztucznej inteligencji i lepszego dopasowania modeli mowy do regionalnych akcentów.",
-      "importance": 2,
+      "category": "badania",
+      "title": "Egipski i nigeryjski angielski nowym wyzwaniem dla modeli mowy w Open ASR Leaderboard",
+      "summary": "Do prestiżowego rankingu Open ASR Leaderboard dodano odmiany języka angielskiego używane w Egipcie i Nigrze. Ma to na celu poprawę dokładności systemów rozpoznawania mowy dla użytkowników z Afryki i Bliskiego Wschodu.",
+      "why": "Rozszerzenie benchmarku o lokalne dialekty przyczynia się do większej inkluzywności i redukcji biasu w technologiach AI rozpoznających mowę.",
+      "importance": 3,
       "source": "",
       "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
       "tags": [
-        "ASR",
-        "OpenAI",
+        "Open ASR",
         "rozpoznawanie mowy",
-        "język angielski"
-      ]
-    },
-    {
-      "id": "x3cycm",
-      "date": "2026-11-05",
-      "category": "narzedzia",
-      "title": "NVIDIA prezentuje Cosmos: Otwarte modele dla interaktywnej symulacji świata",
-      "summary": "NVIDIA wydała nową rodzinę otwartych modeli Cosmos, zaprojektowanych z myślą o zaawansowanej symulacji interaktywnych światów. Narzędzia te mają na celu przyspieszenie rozwoju sztucznej inteligencji w obszarze robotyki i pojazdów autonomicznych.",
-      "why": "To ważny krok w kierunku tworzenia bardziej realistycznych środowisk testowych dla robotyki i systemów autonomicznych.",
-      "importance": 4,
-      "source": "",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "tags": [
-        "NVIDIA",
-        "Cosmos",
-        "symulacja",
-        "modele otwarte",
-        "robotyka"
+        "AI",
+        "różnorodność językowa"
       ]
     },
     {
       "id": "1pabz4u",
       "date": "2026-11-05",
       "category": "narzedzia",
-      "title": "Phonon TTS: Przełomowy syntezator mowy działa lokalnie i bije rekordy",
-      "summary": "Nowy system Phonon TTS oferuje wysokiej jakości syntezator mowy uruchamiany bezpośrednio na urządzeniu, który zajmuje czołowe miejsca w rankingach wydajności. Technologia ta łączy zaawansowaną sztuczną inteligencję z pełną prywatnością użytkownika.",
-      "why": "To ważny krok w stronę wydajnej sztucznej inteligencji działającej offline, bez konieczności wysyłania danych do chmury.",
+      "title": "Phonon TTS: Przełomowa synteza mowy działająca bezpośrednio na urządzeniu",
+      "summary": "Pojawił się Phonon TTS – nowy, wysokiej jakości model zamiany tekstu na mowę, który działa lokalnie na urządzeniu i lideruje w rankingach wydajnościowych. Rozwiązanie to łączy naturalne brzmienie głosu z pełną prywatnością i brakiem opóźnień sieciowych.",
+      "why": "To ważne, ponieważ przeniesienie syntezy mowy najwyższej jakości bezpośrednio na urządzenia użytkowników rewolucjonizuje interakcje głosowe i ochronę prywatności.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/phonon-tts",
       "tags": [
         "TTS",
         "synteza mowy",
-        "on-device AI",
-        "Phonon TTS"
-      ]
-    },
-    {
-      "id": "r3tbfg",
-      "date": "2026-11-04",
-      "category": "narzedzia",
-      "title": "Dharma Field Extractor: Nowe narzędzie do ekstrakcji danych z dokumentów",
-      "summary": "Dharma Field Extractor to zaawansowane narzędzie sztucznej inteligencji, które potrafi przekształcić dowolny dokument wejściowy w uporządkowane pola w formacie JSON. Ułatwia to automatyzację przetwarzania i analizy informacji biznesowych.",
-      "why": "To rozwiązanie znacząco przyspiesza cyfryzację oraz automatyzuje ekstrakcję danych z różnorodnych dokumentów.",
-      "importance": 4,
-      "source": "",
-      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
-      "tags": [
-        "ekstrakcja danych",
-        "JSON",
-        "automatyzacja",
-        "dokumenty"
+        "edge AI",
+        "audio AI"
       ]
     }
   ]
