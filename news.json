@@ -2,89 +2,89 @@
   "demo": false,
   "items": [
     {
+      "id": "jyw3tl",
+      "date": "2026-11-11",
+      "category": "narzedzia",
+      "title": "BotPsy: Lokalny asystent AI o miniaturowych rozmiarach",
+      "summary": "Powstał BotPsy, osobisty asystent działający bezpośrednio na urządzeniu, napędzany przez agentowy model językowy z mniej niż miliardem parametrów. Dzięki temu zapewnia wysoką prywatność i szybkie działanie bez potrzeby łączenia się z chmurą.",
+      "why": "To ważny krok w kierunku wydajnych, prywatnych systemów AI uruchamianych lokalnie na urządzeniach mobilnych.",
+      "importance": 4,
+      "source": "",
+      "url": "https://huggingface.co/blog/qvac/botpsy",
+      "tags": [
+        "BotPsy",
+        "On-Device AI",
+        "modele językowe",
+        "prywatność",
+        "edge AI"
+      ]
+    },
+    {
+      "id": "1yh4sq0",
+      "date": "2026-11-10",
+      "category": "biznes",
+      "title": "Płać za Hugging Face Hub bezpośrednio z kontem Google Cloud",
+      "summary": "Użytkownicy Hugging Face mogą teraz opłacać subskrypcje i usługi bezpośrednio za pomocą swojego konta Google Cloud. To kolejna integracja ułatwiająca rozliczenia firm korzystających z infrastruktury chmurowej.",
+      "why": "Ułatwia to zarządzanie budżetem i konsolidację wydatków na sztuczną inteligencję w ramach jednej platformy chmurowej.",
+      "importance": 3,
+      "source": "",
+      "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+      "tags": [
+        "Hugging Face",
+        "Google Cloud",
+        "chmura",
+        "biznes"
+      ]
+    },
+    {
+      "id": "1n7hte0",
+      "date": "2026-11-10",
+      "category": "narzedzia",
+      "title": "Hugging Face wprowadza modele decyzyjne",
+      "summary": "Popularna platforma Hugging Face rozszerza swoje możliwości o modele decyzyjne. Nowość ta ułatwi deweloperom wdrażanie zaawansowanych systemów podejmowania decyzji.",
+      "why": "Integracja modeli decyzyjnych na głównej platformie AI przyspieszy rozwój autonomicznych systemów biznesowych.",
+      "importance": 4,
+      "source": "",
+      "url": "https://huggingface.co/blog/decision",
+      "tags": [
+        "Hugging Face",
+        "modele decyzyjne",
+        "AI",
+        "ML"
+      ]
+    },
+    {
       "id": "13urluo",
       "date": "2026-11-09",
-      "category": "modele",
-      "title": "Japońskie finanse w pigułce AI: NVIDIA przedstawia syntetyczny zestaw danych Nemotron",
-      "summary": "Powstał nowy syntetyczny zestaw danych Nemotron-Personas-Finance-Japan, który odwzorowuje japońską demografię oraz specyfikę tamtejszego sektora finansowego. Narzędzie ma pomóc w trenowaniu modeli sztucznej inteligencji dopasowanych do lokalnych realiów kulturowych i rynkowych.",
-      "why": "To ważny krok w kierunku tworzenia bezpiecznych i zlokalizowanych modeli finansowych AI dla specyficznych rynków azjatyckich.",
+      "category": "narzedzia",
+      "title": "NVIDIA prezentuje Nemotron-Personas-Finance-Japan: Syntetyczny zestaw danych dla japońskiego rynku finansowego",
+      "summary": "Nowy syntetyczny zestaw danych odzwierciedla demografię oraz unikalny kontekst finansowy Japonii. Narzędzie ma na celu wsparcie rozwoju sztucznej inteligencji dopasowanej do specyfiki lokalnego rynku.",
+      "why": "Umożliwia tworzenie precyzyjnych i bezpiecznych modeli finansowych uwzględniających uwarunkowania kulturowe i demograficzne Japonii bez naruszania prywatności.",
       "importance": 3,
       "source": "",
       "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
       "tags": [
         "NVIDIA",
-        "Nemotron",
-        "finanse",
+        "Finanse",
         "Japonia",
-        "dane syntetyczne"
+        "Syntetyczne dane",
+        "Nemotron"
       ]
     },
     {
       "id": "1grn8tn",
       "date": "2026-11-09",
-      "category": "biznes",
-      "title": "Nowy system AI dba o stabilność zespołów eksperckich",
-      "summary": "Badacze przedstawili metodę HOPE, która pomaga utrzymać integralność kluczowych partnerstw eksperckich w organizacjach. Narzędzie to analizuje relacje i przepływ wiedzy, zapobiegając rozpadowi efektywnych zespołów.",
-      "why": "To ważne, ponieważ ułatwia zarządzanie talentami i chroni krytyczne kompetencje przed utratą w wyniku odejścia pracowników.",
+      "category": "badania",
+      "title": "Nowy system AI dla ekspertów: Przełom w partnerstwie",
+      "summary": "Naukowcy zaprezentowali metodę HOPE, która pomaga utrzymać integralność i współpracę między zaawansowanymi modelami sztucznej inteligencji. To rozwiązanie znacząco poprawia efektywność pracy zespołów sztucznej inteligencji.",
+      "why": "To ważne, ponieważ pozwala na lepszą koordynację wielu systemów AI pracujących nad wspólnymi zadaniami ekspertów.",
       "importance": 3,
       "source": "",
       "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
       "tags": [
-        "HR",
-        "zarządzanie",
-        "zespoły",
-        "biznes"
-      ]
-    },
-    {
-      "id": "bhyne5",
-      "date": "2026-11-06",
-      "category": "narzedzia",
-      "title": "ToyBlocks: Nowe wirtualne środowisko rewolucjonizuje naukę robotów",
-      "summary": "Opracowano nowe, kontrolowane środowisko symulacyjne ToyBlocks, które ma na celu usprawnienie procesu uczenia oraz ewaluacji algorytmów robotycznych. Narzędzie to pozwala na bezpieczne i precyzyjne testowanie zachowań robotów w zróżnicowanych warunkach.",
-      "why": "To ważne, ponieważ ustrukturyzowane środowiska testowe znacznie przyspieszają rozwój sztucznej inteligencji w robotyce.",
-      "importance": 3,
-      "source": "",
-      "url": "https://huggingface.co/blog/allenai/toyblocks",
-      "tags": [
-        "robotyka",
-        "symulacja",
-        "uczenie maszynowe",
-        "ToyBlocks"
-      ]
-    },
-    {
-      "id": "fgc1ew",
-      "date": "2026-11-06",
-      "category": "badania",
-      "title": "Egipski i nigeryjski angielski nowym wyzwaniem dla modeli mowy w Open ASR Leaderboard",
-      "summary": "Do prestiżowego rankingu Open ASR Leaderboard dodano odmiany języka angielskiego używane w Egipcie i Nigrze. Ma to na celu poprawę dokładności systemów rozpoznawania mowy dla użytkowników z Afryki i Bliskiego Wschodu.",
-      "why": "Rozszerzenie benchmarku o lokalne dialekty przyczynia się do większej inkluzywności i redukcji biasu w technologiach AI rozpoznających mowę.",
-      "importance": 3,
-      "source": "",
-      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-      "tags": [
-        "Open ASR",
-        "rozpoznawanie mowy",
-        "AI",
-        "różnorodność językowa"
-      ]
-    },
-    {
-      "id": "1pabz4u",
-      "date": "2026-11-05",
-      "category": "narzedzia",
-      "title": "Phonon TTS: Przełomowa synteza mowy działająca bezpośrednio na urządzeniu",
-      "summary": "Pojawił się Phonon TTS – nowy, wysokiej jakości model zamiany tekstu na mowę, który działa lokalnie na urządzeniu i lideruje w rankingach wydajnościowych. Rozwiązanie to łączy naturalne brzmienie głosu z pełną prywatnością i brakiem opóźnień sieciowych.",
-      "why": "To ważne, ponieważ przeniesienie syntezy mowy najwyższej jakości bezpośrednio na urządzenia użytkowników rewolucjonizuje interakcje głosowe i ochronę prywatności.",
-      "importance": 4,
-      "source": "",
-      "url": "https://huggingface.co/blog/phonon-tts",
-      "tags": [
-        "TTS",
-        "synteza mowy",
-        "edge AI",
-        "audio AI"
+        "HOPE",
+        "modele AI",
+        "współpraca agentów"
       ]
     }
   ]
