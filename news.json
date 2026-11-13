@@ -2,46 +2,81 @@
   "demo": false,
   "items": [
     {
+      "id": "1td1z6g",
+      "date": "2026-11-12",
+      "category": "narzedzia",
+      "title": "LLMON: Nowy język znaczników natywny dla LLM debiutuje w modelach Granite 4.1",
+      "summary": "IBM wprowadza LLMON, innowacyjny język znaczników stworzony specjalnie dla dużych modeli językowych. Rozwiązanie to jest już dostępne w najnowszych modelach Granite 4.1 o rozmiarach 3B i 8B.",
+      "why": "To ważny krok w kierunku optymalizacji interakcji między modelami AI a ustrukturyzowanymi danymi, co może znacząco zwiększyć ich wydajność.",
+      "importance": 4,
+      "source": "",
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "tags": [
+        "LLMON",
+        "IBM",
+        "Granite",
+        "modele językowe",
+        "język znaczników"
+      ]
+    },
+    {
+      "id": "1pcn3fe",
+      "date": "2026-11-12",
+      "category": "narzedzia",
+      "title": "Ostateczny przewodnik po dostrajaniu modeli generowania 3D",
+      "summary": "Pojawił się kompleksowy poradnik poświęcony procesowi fine-tuningu modeli sztucznej inteligencji tworzących obiekty trójwymiarowe. Publikacja ma na celu ułatwienie adaptacji zaawansowanych systemów generatywnych do konkretnych zastosowań.",
+      "why": "To ważne, ponieważ precyzyjne dostrajanie modeli 3D otwiera nowe możliwości w branżach takich jak gamedev, VR i wzornictwo przemysłowe.",
+      "importance": 3,
+      "source": "",
+      "url": "https://huggingface.co/blog/3d-lora-finetuning",
+      "tags": [
+        "3D",
+        "fine-tuning",
+        "generowanie obrazu",
+        "modele AI"
+      ]
+    },
+    {
       "id": "jyw3tl",
       "date": "2026-11-11",
       "category": "narzedzia",
-      "title": "BotPsy: Lokalny asystent AI o miniaturowych rozmiarach",
-      "summary": "Powstał BotPsy, osobisty asystent działający bezpośrednio na urządzeniu, wykorzystujący model językowy posiadający mniej niż miliard parametrów. To przełom w dostarczaniu autonomicznych zdolności agentowych bez potrzeby łączenia się z chmurą.",
-      "why": "Technologia ta umożliwia uruchamianie zaawansowanych agentów AI bezpośrednio na smartfonach i urządzeniach brzegowych, drastycznie zwiększając prywatność i prędkość działania.",
+      "title": "BotPsy: Rewolucyjny asystent AI działający bezpośrednio na urządzeniu",
+      "summary": "Powstał BotPsy, osobisty asystent AI wykorzystujący model językowy o formule poniżej miliarda parametrów, który działa całkowicie lokalnie. Technologia ta pozwala na zaawansowaną autonomię agentową bez konieczności wysyłania danych do chmury.",
+      "why": "To ważne, ponieważ miniaturyzacja silnych modeli agentowych umożliwia prywatne i szybkie korzystanie z zaawansowanego AI bezpośrednio na urządzeniach użytkowników.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/qvac/botpsy",
       "tags": [
         "BotPsy",
-        "On-Device AI",
-        "Small Language Models",
-        "Mobile AI"
+        "edge AI",
+        "modele językowe",
+        "prywatność"
       ]
     },
     {
       "id": "1m4ng9g",
       "date": "2026-11-11",
       "category": "badania",
-      "title": "Nowa technika treningu modeli embeddingów przyspiesza wyszukiwanie AI",
-      "summary": "Opracowano metodę treningu uwzględniającą łączenie tokenów (Token Pooling-Aware Training), która optymalizuje działanie wielowektorowych modeli embeddingów. Nowe podejście pozwala na efektywniejsze przetwarzanie danych bez utraty jakości wyszukiwania.",
-      "why": "To ważne, ponieważ technologia ta znacząco zwiększa wydajność i skalowalność systemów wyszukiwania opartych na sztucznej inteligencji.",
+      "title": "Nowa metoda treningu modeli wektorowych usprawnia przetwarzanie tokenów",
+      "summary": "Przedstawiono nowatorskie podejście do treningu wielowektorowych modeli osadzających, uwzględniające mechanizm łączenia tokenów. Technika ta ma na celu poprawę efektywności i jakości reprezentacji tekstowych w systemach AI.",
+      "why": "To ważne, ponieważ optymalizacja modeli osadzających bezpośrednio przekłada się na lepsze i szybsze działanie wyszukiwarek semantycznych oraz systemów RAG.",
       "importance": 3,
       "source": "",
       "url": "https://huggingface.co/blog/token-pooling",
       "tags": [
-        "embeddingi",
-        "modele językowe",
-        "optymalizacje",
-        "przetwarzanie danych"
+        "embedding",
+        "NLP",
+        "token pooling",
+        "modele językowe"
       ]
     },
     {
       "id": "1yh4sq0",
       "date": "2026-11-10",
       "category": "biznes",
-      "title": "Płać za Hugging Face Hub bezpośrednio przez konto Google Cloud!",
-      "summary": "Użytkownicy Hugging Face mogą teraz opłacać usługi Hub za pomocą swojego konta Google Cloud. To ułatwienie ma na celu uproszczenie rozliczeń i integrację narzędzi deweloperskich.",
-      "why": "Integracja płatności ułatwia firmom zarządzanie kosztami infrastruktury AI w ramach jednego dostawcy chmurowego.",
+      "title": "Płać za Hugging Face Hub bezpośrednio z konta Google Cloud",
+      "summary": "Użytkownicy Hugging Face mogą teraz opłacać subskrypcje i usługi platformy przy użyciu swojego konta Google Cloud. To ułatwienie ma na celu uproszczenie rozliczeń i integrację narzędzi AI w ekosystemie chmurowym.",
+      "why": "Integracja płatności ułatwia firmom zarządzanie wydatkami na sztuczną inteligencję w ramach jednej platformy chmurowej.",
       "importance": 3,
       "source": "",
       "url": "https://huggingface.co/blog/hub-gcp-marketplace",
@@ -49,41 +84,7 @@
         "Hugging Face",
         "Google Cloud",
         "chmura",
-        "AI"
-      ]
-    },
-    {
-      "id": "1n7hte0",
-      "date": "2026-11-10",
-      "category": "narzedzia",
-      "title": "Hugging Face wprowadza modele decyzyjne do swojego ekosystemu",
-      "summary": "Popularna platforma Hugging Face rozszerza swoje możliwości o modele wspomagające podejmowanie decyzji. To krok w stronę bardziej wszechstronnych zastosowań sztucznej inteligencji w biznesie i analizie danych.",
-      "why": "Integracja modeli decyzyjnych ułatwia programistom wdrażanie zaawansowanej logiki biznesowej opartej na AI w ramach jednej platformy.",
-      "importance": 3,
-      "source": "",
-      "url": "https://huggingface.co/blog/decision",
-      "tags": [
-        "Hugging Face",
-        "modele decyzyjne",
-        "AI",
-        "machine learning"
-      ]
-    },
-    {
-      "id": "13urluo",
-      "date": "2026-11-09",
-      "category": "badania",
-      "title": "Nvidia tworzy syntetyczny zestaw danych o japońskich finansach i demografii",
-      "summary": "Nemotron-Personas-Finance-Japan to nowa syntetyczna baza danych odwzorowująca unikalny kontekst demograficzny i finansowy Japonii. Została zaprojektowana, aby wspierać rozwój modeli sztucznej inteligencji dopasowanych do japońskiego rynku.",
-      "why": "To ważne, ponieważ ułatwia trenowanie bezpiecznych i precyzyjnych modeli AI dla specyficznego sektora finansowego w Japonii, z poszanowaniem prywatności dzięki syntetycznemu pochodzeniu danych.",
-      "importance": 3,
-      "source": "",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
-      "tags": [
-        "Nvidia",
-        "Japonia",
-        "finanse",
-        "dane syntetyczne"
+        "biznes"
       ]
     }
   ]
