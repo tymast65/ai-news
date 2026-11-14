@@ -2,12 +2,64 @@
   "demo": false,
   "items": [
     {
+      "id": "rvdxlt",
+      "date": "2026-11-13",
+      "category": "narzedzia",
+      "title": "Stwórz symulację robotyczną za pomocą gotowych zasobów SimReady",
+      "summary": "Nowe zasoby SimReady ułatwiają tworzenie realistycznych symulacji typu pick-and-place dla robotów. To rozwiązanie przyspiesza testowanie i wdrażanie sztucznej inteligencji w środowiskach przemysłowych.",
+      "why": "To ważne, ponieważ znacząco skraca czas potrzebny na przygotowanie wirtualnych środowisk testowych dla robotyki opartej na AI.",
+      "importance": 3,
+      "source": "",
+      "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "tags": [
+        "robotyka",
+        "symulacja",
+        "SimReady",
+        "AI"
+      ]
+    },
+    {
+      "id": "mekur0",
+      "date": "2026-11-13",
+      "category": "badania",
+      "title": "XYBench: Nowy benchmark pomaga AI rozwiązywać problem XY",
+      "summary": "Powstał XYBench, specjalny zestaw testowy zaprojektowany, aby pomóc modelom językowym radzić sobie z tzw. problemem XY, czyli sytuacją, w której użytkownik pyta o rozwiązanie zamiast o swój prawdziwy problem. Narzędzie to uczy sztuczną inteligencję docierania do sedna intencji użytkownika.",
+      "why": "To ważne, ponieważ uczy modele AI zadawania właściwych pytań i drastycznie podnosi trafność oraz użyteczność uzyskanych porad.",
+      "importance": 3,
+      "source": "",
+      "url": "https://huggingface.co/blog/allenai/xybench",
+      "tags": [
+        "XYBench",
+        "benchmark",
+        "modele językowe",
+        "LLM",
+        "badania nad AI"
+      ]
+    },
+    {
+      "id": "hhmgha",
+      "date": "2026-11-13",
+      "category": "narzedzia",
+      "title": "Przełomowa wersja llama.cpp v1.0.0 wzmacnia ekosystem lokalnej sztucznej inteligencji",
+      "summary": "Biblioteka llama.cpp doczekała się stabilnej wersji 1.0.0, oferując solidniejszy fundament dla uruchamiania modeli językowych na urządzeniach lokalnych. Aktualizacja przynosi kluczowe usprawnienia wydajnościowe i architektoniczne.",
+      "why": "To ważne, ponieważ ułatwia i optymalizuje uruchamianie zaawansowanej AI bezpośrednio na prywatnym sprzęcie użytkowników.",
+      "importance": 4,
+      "source": "",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "tags": [
+        "llama.cpp",
+        "open-source",
+        "lokalna AI",
+        "LLM"
+      ]
+    },
+    {
       "id": "1td1z6g",
       "date": "2026-11-12",
-      "category": "narzedzia",
-      "title": "LLMON: Nowy język znaczników natywny dla LLM debiutuje w modelach Granite 4.1",
-      "summary": "IBM wprowadza LLMON, innowacyjny język znaczników stworzony specjalnie dla dużych modeli językowych. Rozwiązanie to jest już dostępne w najnowszych modelach Granite 4.1 o rozmiarach 3B i 8B.",
-      "why": "To ważny krok w kierunku optymalizacji interakcji między modelami AI a ustrukturyzowanymi danymi, co może znacząco zwiększyć ich wydajność.",
+      "category": "modele",
+      "title": "LLMON: Nowy język znaczników natywny dla LLM w modelach Granite 4.1",
+      "summary": "IBM wprowadza LLMON – nowy język znaczników zaprojektowany specjalnie dla modeli językowych, który zadebiutował w najnowszych wersjach modeli Granite 4.1 o rozmiarach 3B i 8B. Rozwiązanie to ma na celu usprawnienie interakcji i przetwarzania danych przez systemy sztucznej inteligencji.",
+      "why": "To ważny krok w kierunku optymalizacji komunikacji między strukturami danych a modelami językowymi, co może zwiększyć wydajność i precyzję działania systemów AI.",
       "importance": 4,
       "source": "",
       "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
@@ -23,9 +75,9 @@
       "id": "1pcn3fe",
       "date": "2026-11-12",
       "category": "narzedzia",
-      "title": "Ostateczny przewodnik po dostrajaniu modeli generowania 3D",
-      "summary": "Pojawił się kompleksowy poradnik poświęcony procesowi fine-tuningu modeli sztucznej inteligencji tworzących obiekty trójwymiarowe. Publikacja ma na celu ułatwienie adaptacji zaawansowanych systemów generatywnych do konkretnych zastosowań.",
-      "why": "To ważne, ponieważ precyzyjne dostrajanie modeli 3D otwiera nowe możliwości w branżach takich jak gamedev, VR i wzornictwo przemysłowe.",
+      "title": "Jak dostosować modele generowania 3D? Oto ostateczny przewodnik",
+      "summary": "Powstał kompleksowy poradnik poświęcony procesowi fine-tuningu nowoczesnych modeli tworzących obiekty trójwymiarowe. Artykuł ułatwia dopasowanie zaawansowanych algorytmów do konkretnych zastosowań.",
+      "why": "To kluczowa wiedza dla twórców i inżynierów, którzy chcą precyzować generowane modele 3D do własnych potrzeb komercyjnych.",
       "importance": 3,
       "source": "",
       "url": "https://huggingface.co/blog/3d-lora-finetuning",
@@ -34,57 +86,6 @@
         "fine-tuning",
         "generowanie obrazu",
         "modele AI"
-      ]
-    },
-    {
-      "id": "jyw3tl",
-      "date": "2026-11-11",
-      "category": "narzedzia",
-      "title": "BotPsy: Rewolucyjny asystent AI działający bezpośrednio na urządzeniu",
-      "summary": "Powstał BotPsy, osobisty asystent AI wykorzystujący model językowy o formule poniżej miliarda parametrów, który działa całkowicie lokalnie. Technologia ta pozwala na zaawansowaną autonomię agentową bez konieczności wysyłania danych do chmury.",
-      "why": "To ważne, ponieważ miniaturyzacja silnych modeli agentowych umożliwia prywatne i szybkie korzystanie z zaawansowanego AI bezpośrednio na urządzeniach użytkowników.",
-      "importance": 4,
-      "source": "",
-      "url": "https://huggingface.co/blog/qvac/botpsy",
-      "tags": [
-        "BotPsy",
-        "edge AI",
-        "modele językowe",
-        "prywatność"
-      ]
-    },
-    {
-      "id": "1m4ng9g",
-      "date": "2026-11-11",
-      "category": "badania",
-      "title": "Nowa metoda treningu modeli wektorowych usprawnia przetwarzanie tokenów",
-      "summary": "Przedstawiono nowatorskie podejście do treningu wielowektorowych modeli osadzających, uwzględniające mechanizm łączenia tokenów. Technika ta ma na celu poprawę efektywności i jakości reprezentacji tekstowych w systemach AI.",
-      "why": "To ważne, ponieważ optymalizacja modeli osadzających bezpośrednio przekłada się na lepsze i szybsze działanie wyszukiwarek semantycznych oraz systemów RAG.",
-      "importance": 3,
-      "source": "",
-      "url": "https://huggingface.co/blog/token-pooling",
-      "tags": [
-        "embedding",
-        "NLP",
-        "token pooling",
-        "modele językowe"
-      ]
-    },
-    {
-      "id": "1yh4sq0",
-      "date": "2026-11-10",
-      "category": "biznes",
-      "title": "Płać za Hugging Face Hub bezpośrednio z konta Google Cloud",
-      "summary": "Użytkownicy Hugging Face mogą teraz opłacać subskrypcje i usługi platformy przy użyciu swojego konta Google Cloud. To ułatwienie ma na celu uproszczenie rozliczeń i integrację narzędzi AI w ekosystemie chmurowym.",
-      "why": "Integracja płatności ułatwia firmom zarządzanie wydatkami na sztuczną inteligencję w ramach jednej platformy chmurowej.",
-      "importance": 3,
-      "source": "",
-      "url": "https://huggingface.co/blog/hub-gcp-marketplace",
-      "tags": [
-        "Hugging Face",
-        "Google Cloud",
-        "chmura",
-        "biznes"
       ]
     }
   ]
